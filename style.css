@@ -1,0 +1,355 @@
+/* --- GLOBAL SETTINGS FOR DIVS/ELEMENTS --- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* --- FONT SETTINGS --- */
+
+/* --- LANDING BANNER --- */
+
+#landing {
+    height: 120vh;
+    max-width: 100vw;
+    background-color: black;
+    background-image:url(./page_banner.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.logo {
+    transform: scale(0.4);
+}
+
+.landing-banner {
+    min-width: 500px;
+    max-width: auto;
+    min-height: 500px;
+    max-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* border: 2px solid green; */
+  
+}
+
+.landing-banner h1:first-of-type {
+    font-size: 5rem;
+}
+.landing-banner h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 5px;
+}
+
+
+.landing-banner h2{
+    font-size: 2.4rem;
+}
+
+.landing-banner h1:last-of-type::after {
+    content: '';
+    display: block;
+    border: 3px solid rgb(6, 204, 6);
+    box-shadow: inset 0 1px 0 1px;
+    margin: 2rem 0 0 13rem;
+    width: 15%;
+    
+}
+
+.landing-slogan {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+.landing-slogan p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* div white arrow added because of pixels on the actual logo */
+
+.white-arrow {
+    width: 0px; 
+    height: 50px; 
+    border-left: 2000px solid transparent;
+    border-right: 2000px solid transparent;
+    border-bottom: 310px solid rgb(255, 255, 255);
+    
+
+}
+/* --- MAIN BODY STYLING --- */
+
+#main-body {
+margin-top: -10.5rem;
+width: 100vw;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+#main-body h1 {
+    color:rgb(6, 204, 6);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+#main-body p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#main-body p:last-of-type {
+    margin-bottom: 8rem;
+}
+
+.after-line:after {
+    content: '';
+    display: block;
+    border: 3px solid rgb(6, 204, 6);
+    position: absolute;
+    left: 47.5%;
+    width: 75px;
+    margin: 2rem 0 2rem 0;
+}
+.title {
+font-weight: bold;
+margin-top: 2rem;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {
+    color: black;
+}
+a:active {
+    color: black;
+}
+a:hover {
+    border-bottom: 2px solid black;
+}
+
+ul {
+    margin-bottom: 2rem;
+    list-style-position: inside;
+}
+ul li {
+    margin: 1rem;
+}
+/* --- EMAIL BANNER --- */
+.banner{
+    width: 86%;
+    height: 170px;
+    z-index: 99;
+    position: absolute;
+    left:7%;
+    margin: -5rem 0 0 0;
+    background-color: rgb(6, 204, 6);
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* --- MAILING LIST BANNER --- */
+.mailing-list {
+    background-color: black;
+    background-image:url(./mailinglist_background\ 2.png);
+    background-size: 60rem;
+    width: 60%;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.mailing-list h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.mailing-list p {
+    margin-bottom: 1rem
+    
+}
+
+.inputs {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.email-input {
+    height: 50px;
+    width: 300px;
+    border: none;
+    margin: 0 -0.3rem 0.1rem 0;
+    padding-left: 20px;
+}
+
+.signupBtn {
+    background-color: rgb(6, 204, 6);
+    border: none;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.signupBtn:hover{
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+
+.signupIcon {
+    transform: scale(1.3);
+   margin: 0 0 0 14rem;
+   max-width: 100px;
+   max-height: 150px;
+}
+
+
+/* --- CONTACT US BANNER --- */
+
+.contact-us {
+    color: white;
+    padding: 40px;
+
+}
+.in-touch {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.contactBtn {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+   float: right;
+}
+
+.contactBtn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* --- FOOTER --- */
+#footer {
+    background-color: rgb(18, 18, 18);
+    height: 420px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top:3rem;
+    
+}
+
+#footer p {
+    color: rgb(86, 86, 86);
+    float: left;
+}
+
+#footer .email {
+    color: rgb(6, 204, 6);
+    margin-top: 0.5rem;
+
+}
+
+#footer a {
+    color: rgb(6, 204, 6);
+}
+#footer a:hover {
+    border-bottom: 1px solid rgb(6, 204, 6);
+}
+
+
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -2rem;
+}
+.footer-logo {
+    transform: scale(0.02);
+    max-height: 0;
+    max-width: 0;
+    margin-bottom: 6rem;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-right h1{
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+}
+
+.footer-right p:first-of-type {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.contact-number {
+    margin: 0 0 2rem 0;
+}
+
+
+.separator {
+    height: 1px;
+    background-color: rgb(6, 204, 6);
+    width: 86%;
+    margin-left: 7%;
+}
+
+.signature {
+    color: rgb(86, 86, 86);
+    align-self: center;
+    margin-top: -4rem;
+    font-size: 80%;
+}
+
+
